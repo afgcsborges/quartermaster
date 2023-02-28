@@ -8,15 +8,12 @@ import styled from 'styled-components'
 
 const StyledButton = styled(AntdButton)`
     &&& {
-        height: 80%;
+        height: 40px;
         font-size: 14px;
-        max-width: 80%;
-        display: inline-flex;
-        justify-content: right;
-        align-items: right;
+        width: 50px;
         padding: 8px;
-        float: right;
-        margin-bottom: 10px;
+        margin-right: 5px;
+        margin-left: 5px;
         background-color: 'transparent';
         border-color: '#508BC3';
         color: '#508BC3';

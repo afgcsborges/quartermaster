@@ -9,10 +9,7 @@ const Home = () => {
 
     return (
         <div className="App">
-            <div style={{ display: 'inline-flex', width: '520px' }}>
-                <BattleCard
-                />
-            </div>
+            <BattleCard />
         </div>
     )
 }
