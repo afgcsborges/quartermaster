@@ -4,6 +4,6 @@ import App from './App'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const SoccerSpa = () => <App />
+const Quartermaster = () => <App />
 
-ReactDOM.render(<SoccerSpa />, document.getElementById('root'))
+ReactDOM.render(<Quartermaster />, document.getElementById('root'))
