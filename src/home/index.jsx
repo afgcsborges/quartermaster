@@ -1,6 +1,7 @@
+/* eslint-disable */
 import React, { useEffect, useState } from 'react'
 
-import InfoCard from 'containers/info-card'
+import BattleCard from 'containers/battle-card'
 import { shipDamage } from 'data'
 
 const Home = () => {
@@ -8,23 +9,9 @@ const Home = () => {
 
     return (
         <div className="App">
-            <div style={{ display: 'inline-flex', width: '1100px' }}>
-                <InfoCard
+            <div style={{ display: 'inline-flex', width: '520px' }}>
+                <BattleCard
                 />
-                <InfoCard
-                />
-            </div>
-            <div style={{ display: 'inline-flex', width: '1100px' }}>
-                <InfoCard
-                />
-                <InfoCard
-                />
-            </div>
-            <div style={{ display: 'inline-flex', width: '1100px' }}>
-                <div style={{ border: '1px solid', display: 'grid', width: '520px' }}>
-                </div>
-                <div style={{ border: '1px solid', display: 'grid', width: '520px' }}>
-                </div>
             </div>
         </div>
     )

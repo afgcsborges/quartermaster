@@ -1,3 +1,63 @@
+/* eslint-disable */
+
+export const shipSelect = [
+    {
+        key: 'sloop',
+        label: 'Sloop'
+    },
+    {
+        key: 'cutter',
+        label: 'Cutter'
+    },
+    {
+        key: 'dhow',
+        label: 'Dhow'
+    },
+    {
+        key: 'fanchuan',
+        label: 'Fanchuan'
+    },
+    {
+        key: 'longship',
+        label: 'LongShip'
+    },
+    {
+        key: 'baghlah',
+        label: 'Baghlah'
+    },
+    {
+        key: 'junk',
+        label: 'Junk'
+    },
+    {
+        key: 'merchantBrig',
+        label: 'Merchant Brig'
+    },
+    {
+        key: 'warBrig',
+        label: 'War Brig'
+    },
+    {
+        key: 'merchantGalleon',
+        label: 'Merchant Galleon'
+    },
+    {
+        key: 'warGalleon',
+        label: 'War Galleon'
+    },
+    {
+        key: 'xebec',
+        label: 'Xebec'
+    },
+    {
+        key: 'warFrigate',
+        label: 'War Frigate'
+    },
+    {
+        key: 'grandFrigate',
+        label: 'Grand Frigate'
+    }
+]
 export const shipDamage = {
     sloop: {
         gunSize: 'small',
@@ -320,5 +380,5 @@ export const shipDamage = {
             med: 40,
             large: 30
         }
-    },
+    }
 }
