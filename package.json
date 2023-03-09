@@ -2,7 +2,10 @@
   "name": "quartermaster",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://afgcsborges.github.io/quartermaster",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "start": "react-scripts start"
@@ -52,6 +55,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.6",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^5.0.0",
     "prettier": "^2.7.1"
   }
 }
