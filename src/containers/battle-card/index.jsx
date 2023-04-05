@@ -4,7 +4,7 @@ import 'antd/lib/space/style/index.css'
 import 'antd/lib/style/index.css'
 
 import React, { useEffect, useState } from 'react'
-import { shipDamage, shipSelect } from 'data'
+import { shipDamage, shipSelect, shipStations } from 'data'
 
 import Button from 'components/button'
 import Counter from 'containers/counter'
@@ -72,6 +72,23 @@ const BattleCard = ({}) => {
                 </div>
             </div>
             <Counter ship1={ship1} ship2={ship2} />
+            <div style={{ border: '1px solid', display: 'flex', width: '518px' }}>
+                    <div style={{ display: 'grid', width: '200px', justifyContent: 'center' }}>
+                        {`Sails: ${shipStations[ship1].sail}`}
+                    </div>
+                    <div style={{ display: 'grid', width: '200px', justifyContent: 'center' }}>
+                        {`Carp: ${shipStations[ship1].carp}`}
+                    </div>
+                    <div style={{ display: 'grid', width: '200px', justifyContent: 'center' }}>
+                        {`Bilge: ${shipStations[ship1].bilge}`}
+                    </div>
+                    <div style={{ display: 'grid', width: '200px', justifyContent: 'center' }}>
+                        {`Guns: ${shipStations[ship1].gun}`}
+                    </div>
+                    <div style={{ display: 'grid', width: '200px', justifyContent: 'center' }}>
+                        {`Total: ${shipStations[ship1].total}`}
+                    </div>
+            </div>
         </div>
     )
 }

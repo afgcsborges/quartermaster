@@ -382,3 +382,104 @@ export const shipDamage = {
         }
     }
 }
+
+export const shipStations = {
+    sloop: {
+        bilge: 2,
+        carp: 2,
+        sail: 3,
+        gun: 1,
+        total: 7,
+    },
+    cutter: {
+        bilge: 2,
+        carp: 3,
+        sail: 5,
+        gun: 2,
+        total: 12,
+    },
+    dhow: {
+        bilge: 2,
+        carp: 3,
+        sail: 5,
+        gun: 1,
+        total: 12,
+    },
+    fanchuan: {
+        bilge: 2,
+        carp: 3,
+        sail: 5,
+        gun: 1,
+        total: 12,
+    },
+    longship: {
+        bilge: 3,
+        carp: 3,
+        sail: 5,
+        gun: 3,
+        total: 15,
+    },
+    baghlah: {
+        bilge: 4,
+        carp: 4,
+        sail: 6,
+        gun: 3,
+        total: 18,
+    },
+    merchantBrig: {
+        bilge: 6,
+        carp: 9,
+        sail: 6,
+        gun: 2,
+        total: 20,
+    },
+    junk: {
+        bilge: 4,
+        carp: 4,
+        sail: 6,
+        gun: 3,
+        total: 18,
+    },
+    warBrig: {
+        bilge: 4,
+        carp: 6,
+        sail: 9,
+        gun: 4,
+        total: 30,
+    },
+    merchantGalleon: {
+        bilge: 14,
+        carp: 14,
+        sail: 9,
+        gun: 3,
+        total: 30,
+    },
+    xebec: {
+        bilge: 8,
+        carp: 9,
+        sail: 14,
+        gun: 6,
+        total: 45,
+    },
+    warGalleon: {
+        bilge: 7,
+        carp: 8,
+        sail: 12,
+        gun: 6,
+        total: 40,
+    },
+    warFrigate: {
+        bilge: 12,
+        carp: 18,
+        sail: 18,
+        gun: 6,
+        total: 75,
+    },
+    grandFrigate: {
+        bilge: 16,
+        carp: 24,
+        sail: 30,
+        gun: 6,
+        total: 159,
+    }
+}
