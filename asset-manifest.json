@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/quartermaster/static/css/main.172404e0.css",
-    "main.js": "/quartermaster/static/js/main.9aa48fbd.js",
+    "main.js": "/quartermaster/static/js/main.d03ad1e8.js",
     "index.html": "/quartermaster/index.html",
     "main.172404e0.css.map": "/quartermaster/static/css/main.172404e0.css.map",
-    "main.9aa48fbd.js.map": "/quartermaster/static/js/main.9aa48fbd.js.map"
+    "main.d03ad1e8.js.map": "/quartermaster/static/js/main.d03ad1e8.js.map"
   },
   "entrypoints": [
     "static/css/main.172404e0.css",
-    "static/js/main.9aa48fbd.js"
+    "static/js/main.d03ad1e8.js"
   ]
 }
