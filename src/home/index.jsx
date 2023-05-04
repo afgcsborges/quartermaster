@@ -1,15 +1,14 @@
 /* eslint-disable */
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 import BattleCard from 'containers/battle-card'
-import { shipDamage } from 'data'
+import LavishCounter from 'containers/lasvish-counter'
 
 const Home = () => {
-    const [damageData] = useState(shipDamage)
-
     return (
         <div className="App">
             <BattleCard />
+            <LavishCounter />
         </div>
     )
 }

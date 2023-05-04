@@ -37,14 +37,20 @@ const StyledButton = styled(AntdButton)`
     }
 `
 
-const Button = ({ label, onClick }) => <StyledButton onClick={onClick}>{label}</StyledButton>
+const Button = ({ label, onClick, disabled }) => (
+    <StyledButton disabled={disabled} onClick={onClick}>
+        {label}
+    </StyledButton>
+)
 
 Button.defaultProps = {
+    disabled: false,
     label: null,
     onClick: null
 }
 
 Button.propTypes = {
+    disabled: PropTypes.bool,
     /** Text inside button */
     label: PropTypes.oneOfType([PropTypes.node, PropTypes.string]),
     /** Set the handler to handle click event */

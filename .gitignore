@@ -26,3 +26,5 @@ yarn-error.log*
 # locks
 package-lock.json
 yarn.lock
+build
+dist

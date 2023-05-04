@@ -1,14 +1,21 @@
 {
   "name": "quartermaster",
   "version": "0.1.0",
+  "description": "app",
+  "author": "Francisco",
   "private": true,
-  "homepage": "https://afgcsborges.github.io/quartermaster",
+  "main": "public/electron.js",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "dev": "concurrently \"SET BROWSER=none&&npm start\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron": "wait-on tcp:3000 && electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "release": "react-scripts build && electron-builder --publish=always"
   },
   "browserslist": {
     "production": [
@@ -35,6 +42,7 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.23.0",
     "axios": "^0.27.2",
+    "electron-is-dev": "^2.0.0",
     "fs": "^0.0.1-security",
     "lodash": "^4.17.21",
     "react": "^17.0.2",
@@ -47,6 +55,9 @@
     "yargs": "^17.5.1"
   },
   "devDependencies": {
+    "concurrently": "^8.0.1",
+    "electron": "^24.1.2",
+    "electron-builder": "^23.6.0",
     "eslint": "^8.23.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
@@ -56,6 +67,14 @@
     "eslint-plugin-react": "^7.31.6",
     "eslint-plugin-react-hooks": "^4.6.0",
     "gh-pages": "^5.0.0",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "wait-on": "^7.0.1"
+  },
+  "homepage": "./",
+  "build": {
+    "appId": "com.todo_app",
+    "win": {
+      "target": "nsis"
+    }
   }
 }
